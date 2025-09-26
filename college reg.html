@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBASC</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #471396;
+        }
+        nav {
+            background: #090040;
+            padding: 12px 0;
+            text-align: right;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #B13BFF;
+        }
+        .main-heading {
+            text-align: center;
+            margin-top: 24px;
+            color: #2c3e50;
+        }
+        .college-img {
+            display: block;
+            margin: 18px auto;
+            border-radius: 50px;
+            box-shadow: 0 2px 8px rgba(44,62,80,0.12);
+            max-width: 350px;
+        }
+        .department-desc {
+            max-width: 700px;
+            margin: 0 auto 24px auto;
+            background: #fff;
+            padding: 18px 24px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+        }
+        .form-section {
+            max-width: 400px;
+            margin: 0 auto 32px auto;
+            background: #fff;
+            padding: 24px;
+            border-radius: 50px;
+            box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .form-section h2 {
+            text-align: center;
+            margin-bottom: 18px;
+            color: #2c3e50;
+        }
+        .form-section form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .form-section label {
+            font-weight: bold;
+            color: #111;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 6px;
+            background-color: #ffd700;
+            border-radius: 50px;
+            width: auto;
+            padding: 6px 0;
+            font-size: 1.1em;
+            box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+        }
+        .form-section input, .form-section select {
+            width: 90%;
+            padding: 8px;
+            margin: 6px 0 14px 0;
+            border-radius: 50px;
+            border: 1px solid #ccc;
+            color: #111;
+            text-align: center;
+            font-size: 1em;
+        }
+        .form-section input[type="submit"] {
+            background: #2c3e50;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 50px;
+            padding: 10px 0;
+            transition: background 0.2s;
+            width: 90%;
+            text-align: center;
+        }
+        .form-section input[type="submit"]:hover {
+            background: #ffd700;
+            color: #2c3e50;
+        }
+        .lists-section, .table-section {
+            max-width: 700px;
+            margin: 0 auto 32px auto;
+            background: #ff6a6aba;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+            
+            
+        }
+        .lists-section h3, .table-section h3 {
+            margin-top: 0;
+            text-align: center;
+            width: 500px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 12px;
+            
+        }
+        th, td {
+            border: 1px solid #bbb;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background: #2c3e50;
+            color: #fff;
+        }
+        footer {
+            background: #471396;
+            color: #fff;
+            text-align: center;
+            padding: 16px 0;
+            margin-top: 40px;
+            border-radius: 20px 20px 0 0;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1 style="text-align: left; color: #feb9f8b9;">Don Bosco Arts & Science College</h1>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <h1 class="main-heading"> Don Bosco Arts & Science College</h1>
+    <img class="college-img" src="./image.png" alt="College Image">
+    <div class="department-desc">
+        <p>
+            Welcome to the Department of Computer Applications at My College! Our department is dedicated to providing students with a strong foundation in computer science, programming, and modern software development. We focus on hands-on learning, innovation, and preparing students for successful careers in IT, data analytics, and software engineering.
+        </p>
+    </div>
+    <div class="form-section">
+        <h2>Student Registration</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="department">Department:</label>
+            <select id="department" name="department" required>
+                <option value="">Select Department</option>
+                <option value="bca">BCA</option>
+                <option value="bcom">B.Com</option>
+                <option value="ba">BA</option>
+                <option value="bsc">B.Sc</option>
+            </select>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="lists-section">
+        <h3>Fruits (Unordered List)</h3>
+        <ul>
+            <li>Apple</li>
+                <ol>
+                    <li>Red Apple</li>
+                    <li>Green Apple</li>
+                    <li>Yellow Apple</li>
+                </ol>
+            <li>Banana</li>
+                <ol>
+                    <li>Cavendish Banana</li>
+                    
+                </ol>
+            <li>Orange</li>
+                    <ol>
+                        <li>Navel Orange</li>
+                        <li>Blood Orange</li>
+                        <li>Mandarin Orange</li>
+                    </ol>
+            <li>Strawberry</li>
+            <li>Mango</li>
+                  <ol>
+                    <li>Alphonso Mango</li>
+                    <li>Haden Mango</li>    
+                  </ol>
+            <li>Grape</li>
+        </ul>
+        <h3>Countries (Ordered List)</h3>
+        <ol>
+            <li>India</li>
+            <li><abbrr title="united states of america">USA</abbrr></li>
+            <li>Japan</li>
+            <li>Australia</li>
+            <li>Brazil</li>
+        </ol>
+    </div>
+    <div class="table-section">
+        <h3>Student Marks Table</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>python</th>
+                <th>HTML</th>
+                <th>C++</th>
+            </tr>
+            <tr>
+                <td>theopin</td>
+                <td>85</td>
+                <td>90</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td>Ravi</td>
+                <td>78</td>
+                <td>82</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>reman</td>
+                <td>92</td>
+                <td>87</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>ravi</td>
+                <td>88</td>
+                <td>91</td>
+                <td>89</td>
+            </tr>
+            <tr>
+                <td>charan</td>
+                <td>75</td>
+                <td>80</td>
+                <td>78</td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        Created by Theopin.B &copy; 2025
+    </footer>
+    <script> 
+    
+    console.log("Hello, World!");
+    let name = prompt("Enter your name:");
+    console.log("User's name is: " + name);
+    let age=prompt("Enter your age:");
+    window.alert("your age is: " + age);
+    window.alert("Welcome " + name + " to Don Bosco Arts & Science College!");
+    
+
+    </script>
+</body>
+</html>
